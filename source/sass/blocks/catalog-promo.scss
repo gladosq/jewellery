@@ -1,0 +1,34 @@
+.catalog-promo {
+  background: url("../img/catalog-promo.png");
+  background-color: $link-decoration;
+  background-size: cover;
+  margin-top: -10px;
+}
+
+.catalog-promo__wrapper {
+  min-height: 261px;
+  text-align: center;
+
+  & h1 {
+    @include fonts(700, 34px, $basic-white);
+    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    text-transform: uppercase;
+    padding-top: 94px;
+    margin-bottom: 0;
+  }
+
+  & p {
+    @include fonts(400, 22px, $basic-white);
+    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-style: italic;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: $half-desktop-width) {
+  .catalog-promo {
+    background: url("../img/catalog-promo-tablet.png");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}

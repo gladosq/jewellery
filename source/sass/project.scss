@@ -1,0 +1,28 @@
+.project {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+
+  & h1 {
+    padding-top: 100px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 30px;
+  }
+}
+
+.project__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project__item {
+
+  & a {
+    font-size: 24px;
+
+    &:hover {
+      color: $link-decoration;
+    }
+  }
+}

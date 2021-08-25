@@ -1,0 +1,251 @@
+.footer {
+  background: $basic-black;
+  margin-top: 124px;
+  color: $basic-white;
+}
+
+.footer__wrapper {
+  max-width: 1170px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "inbox nav contacts";
+  grid-template-columns: 1fr 500px 118px;
+  padding-bottom: 100px;
+}
+
+.footer__inbox {
+  grid-area: inbox;
+  margin-top: 58px;
+  position: relative;
+
+  & h3 {
+    @include fonts(700, 34px, inherit);
+    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+
+  & p {
+    margin-top: 8px;
+  }
+}
+
+.footer__nav {
+  grid-area: nav;
+}
+
+.footer__nav-list {
+  list-style-type: none;
+  margin: 94px 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__contacts-list {
+  grid-area: contacts;
+  list-style-type: none;
+  margin: 94px 0 0;
+  padding: 0;
+}
+
+.footer__nav-item {
+  min-width: 180px;
+  margin-bottom: 17px;
+
+  & a {
+    color: $basic-white;
+
+    &:hover {
+      color: $link-decoration;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &:nth-child(2n+1) {
+    margin-right: 60px;
+  }
+
+}
+
+.footer__contacts-item {
+  margin-bottom: 16px;
+
+  & svg {
+    margin-top: 4px;
+    margin-right: 17px;
+    margin-left: 3px;
+    fill: $basic-white;
+  }
+
+  & a {
+    color: $basic-white;
+
+    &:hover {
+      color: $link-decoration;
+
+      & svg {
+        fill: $link-decoration;
+      }
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &:nth-child(1) {
+
+    & svg {
+      margin-right: 20px;
+      margin-left: 6px;
+    }
+  }
+
+  &:nth-child(2) {
+    font-size: 15px;
+
+
+  }
+}
+
+.footer__input-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+
+  & input {
+    @include fonts(500, 14px, $basic-white);
+    font-family: "Poppins", "Arial", sans-serif;
+    margin-top: 27px;
+    background: transparent;
+    border: 0;
+    position: relative;
+    margin-left: -2px;
+    color: $basic-white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & input::placeholder {
+    @include fonts(500, 14px, $basic-white);
+    font-family: "Poppins", "Arial", sans-serif;
+    opacity: 0.4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 90.5%;
+    height: 1px;
+    background: $basic-white;
+    bottom: 24px;
+  }
+
+  & button {
+    @include fonts(500, 16px, $basic-white);
+    font-family: "Poppins", "Arial", sans-serif;
+    background: transparent;
+    height: 24px;
+    width: 110px;
+    text-align: left;
+    color: $basic-white;
+    margin-top: 21px;
+    border: 0;
+    margin-right: -49px;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover {
+      color: $link-decoration;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:hover ~ svg {
+      stroke: $link-decoration;
+    }
+
+    &:active ~ svg {
+      opacity: 0.6;
+    }
+  }
+
+  & svg {
+    position: absolute;
+    bottom: 37px;
+    right: 51px;
+    stroke: $basic-white;
+    transform: rotate(180deg);
+    pointer-events: none;
+  }
+}
+
+@media (max-width: $half-desktop-width) {
+  .footer {
+    margin-top: 72px;
+  }
+
+  .footer__wrapper {
+    max-width: 700px;
+    grid-template-areas:
+    "inbox inbox"
+    "nav contacts";
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+
+  .footer__inbox {
+    margin-top: 16px;
+    margin-left: 11px;
+  }
+
+  .footer__input-container {
+
+    & input {
+      margin-top: 28px;
+    }
+
+    &::before {
+      bottom: -7px;
+      width: 81.3%;
+    }
+
+    & button {
+      margin-right: 28px;
+      margin-top: 24px;
+    }
+
+    & svg {
+      right: 128px;
+      top: 155px;
+    }
+  }
+
+  .footer__nav-list {
+    margin-left: 12px;
+    margin-top: 50px;
+    max-width: 448px;
+  }
+
+  .footer__nav-item {
+
+    &:nth-child(2n+1) {
+      padding-right: 14px;
+    }
+  }
+
+  .footer__contacts-list {
+    margin-left: -234px;
+    margin-top: 50px;
+  }
+}
