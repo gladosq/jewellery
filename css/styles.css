@@ -1290,7 +1290,8 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
     background: url("../img/promo-tablet@2x.png");
-    background-size: cover; } }
+    background-size: cover;
+    background-position: 50% 50%; } }
 
 .shop__wrapper {
   margin: auto;
@@ -2098,7 +2099,6 @@ button.swiper-pagination-bullet {
     border: 0;
     margin-right: -49px;
     position: relative;
-    margin-left: auto;
     cursor: pointer; }
     .footer__input-container button:hover {
       color: #a87b62; }
