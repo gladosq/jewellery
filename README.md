@@ -1,7 +1,7 @@
 # Личный проект «Jewellery»
 Разработка веб-интерфейса
 
-## Открыть [Demo](gladosq.github.io/jewellery/)
+## Открыть [Demo](https://gladosq.github.io/jewellery/)
 
 ## Установка
 Перед запуском необходимо установить следующие компоненты:
