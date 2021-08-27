@@ -1,22 +1,16 @@
 /* Colors */
 $basic-white: #ffffff;
 $basic-black: #000000;
-$half-black: #9B9997;
-$header-decoration: #F6F5F4;
-$background-color: #F0EAE4;
-$link-decoration: #A87B62;
+$half-black: #9b9997;
+$header-decoration: #f6f5f4;
+$background-color: #f0eae4;
+$link-decoration: #a87b62;
 $background-opacity: rgba(255, 255, 255, 0.15);
+$shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
 
 /* Breakpoints */
 $desktop-width: 1600px;
 $half-desktop-width: 1200px;
 $tablet-width: 1023px;
 $mobile-width: 767px;
-
-
-// Main-page - 1366px;
-/*
-- мобильная версия — 320px - 767px;
-- планшетная версия — 768px - 1023px;
-- десктопная версия — от 1024px и выше;
-*/
+$half-mobile-width: 500px;

@@ -7,7 +7,7 @@
     width: 100%;
     height: 1px;
     top: 114px;
-    background: #F6F5F4;
+    background: $header-decoration;
   }
 }
 
@@ -84,7 +84,7 @@
 .header__login-mobile {
   display: none;
   margin-left: 48px;
-  margin-top: 40px;
+  margin-top: 22px;
 
   & a {
     color: $basic-white;
@@ -128,7 +128,14 @@
 
   & svg {
     fill: $link-decoration;
+  }
 
+  &:hover svg {
+    fill: $basic-black;
+  }
+
+  &:active svg {
+    opacity: 0.6;
   }
 }
 
@@ -162,7 +169,6 @@
       opacity: 0.6;
     }
   }
-
 }
 
 .header__nav-list {
@@ -181,6 +187,14 @@
     font-weight: 500;
     font-size: 14px;
     margin-left: 32px;
+
+    &:hover {
+      color: $link-decoration;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   & span {
@@ -192,6 +206,16 @@
   font-weight: 500;
   font-size: 16px;
   margin-right: 35px;
+
+  & a {
+    &:hover {
+      color: $link-decoration;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -199,16 +223,14 @@
     margin-bottom: 6px;
 
     &::before {
-      background: none
+      background: none;
     }
-
   }
 
   .header__logo-link {
     margin-top: -16px;
     margin-left: 46px;
   }
-
 
   .header__top-side-container {
     padding-left: 36px;
@@ -224,7 +246,6 @@
     & label {
       display: none;
     }
-
   }
 
   .header__mobile-hamburger {
@@ -238,7 +259,6 @@
       stroke: $link-decoration;
     }
   }
-
 
   .header__login-wrapper {
     display: none;
@@ -338,7 +358,6 @@
     }
 
     .header__logo-link {
-
       & svg {
         fill: $basic-white;
       }
@@ -359,7 +378,7 @@
     }
 
     .header__nav {
-      margin-top: 120px;
+      margin-top: 100px;
     }
 
     .header__nav-list {
@@ -395,7 +414,40 @@
 @media (max-width: $mobile-width) {
   .header__wrapper {
     margin-top: 28px;
+  }
 
+  .header__nav-mobile-list {
+    margin-left: 15px;
+    margin-top: 28px;
+  }
+
+  .header__wrapper--active {
+    margin-top: 0;
+
+    .header__top-side-container {
+      padding-right: 6px;
+      margin-top: -2px;
+
+      & input {
+        top: 63px;
+        width: 71%;
+        padding-right: 20px;
+      }
+
+      & label {
+        top: 84px;
+        left: -32px;
+      }
+    }
+
+    .header__nav-list {
+      margin-left: 15px;
+    }
+
+    .header__login-mobile {
+      margin-left: 15px;
+      margin-top: 30px;
+    }
   }
 
   .header__top-side-container {
@@ -417,15 +469,14 @@
   .header__mobile-cart {
     margin-right: 8px;
   }
-
 }
 
 @keyframes slide-up-navigation {
   0% {
     opacity: 0;
     margin-top: -200px;
-
   }
+
   100% {
     opacity: 1;
     margin-top: 30px;

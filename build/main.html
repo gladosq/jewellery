@@ -21,14 +21,14 @@
             <use xlink:href="img/sprite.svg#hamburger-svg"></use>
           </svg>
         </button>
-        <a class="header__logo-link" href="#">
+        <a class="header__logo-link" style="pointer-events: none;">
           <svg width="66" height="66" viewBox="0 0 66 66" fill="none">
             <use xlink:href="img/sprite.svg#header-logo-svg"></use>
           </svg>
         </a>
         <div class="header__login-wrapper">
-          <a class="header__login-link" href="">Login</a>
-          <a href="">Cart <span class="header__login-counter">0</span></a>
+          <a class="header__login-link" href="no-js-login.html">Login</a>
+          <a href="#">Cart <span class="header__login-counter">0</span></a>
         </div>
         <div class="header__mobile-cart">
           <a href="#">
@@ -41,19 +41,19 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a href="">What’s new</a>
+            <a href="#">What’s new</a>
           </li>
           <li class="header__nav-item">
-            <a href="">Chokers</a>
+            <a href="#">Chokers</a>
           </li>
           <li class="header__nav-item">
-            <a href="">Necklaces</a>
+            <a href="#">Necklaces</a>
           </li>
           <li class="header__nav-item">
-            <a href="">Rings</a>
+            <a href="#">Rings</a>
           </li>
           <li class="header__nav-item">
-            <a href="">Earrings</a>
+            <a href="#">Earrings</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +65,7 @@
         </ul>
       </nav>
       <div class="header__login-mobile">
-        <a href="">Login</a>
+        <a class="header__login-mobile-link" href="">Login</a>
       </div>
     </div>
   </header>
@@ -79,120 +79,156 @@
     <section class="shop">
       <div class="shop__wrapper">
         <h2>New In</h2>
-        <a class="shop__link" href="">Shop Now</a>
+        <a class="shop__link" href="catalog.html">Shop Now</a>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <ul class="shop__products-list">
                 <li class="shop__item-product">
-                  <img src="img/purple-gemstone-necklace-desktop.png" width="270" height="284" alt="">
-                  <p>Necklace with amethyst</p>
-                  <span>$ 145</span>
+                  <a href="#">
+                    <img src="img/purple-gemstone-necklace-desktop.png" width="270" height="284" alt="">
+                    <p>Necklace with amethyst</p>
+                    <span>$ 145</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/layered-choker-necklace-desktop.png" width="270" height="284" alt="">
-                  <p>Layered сhoker</p>
-                  <span>$ 115</span>
+                  <a href="#">
+                    <img src="img/layered-choker-necklace-desktop.png" width="270" height="284" alt="">
+                    <p>Layered choker</p>
+                    <span>$ 115</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/dainty-gold-necklace-desktop.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/dainty-gold-necklace-desktop.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/galaxy-earrings-desktop.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
-                </li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <ul class="shop__products-list">
-                <li class="shop__item-product">
-                  <img src="img/double-pearl-earrings.png" width="270" height="284" alt="">
-                  <p>Necklace with amethyst</p>
-                  <span>$ 145</span>
-                </li>
-                <li class="shop__item-product">
-                  <img src="img/bird-necklace.png" width="270" height="284" alt="">
-                  <p>Layered сhoker</p>
-                  <span>$ 115</span>
-                </li>
-                <li class="shop__item-product">
-                  <img src="img/black-leather-choker-necklace.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
-                </li>
-                <li class="shop__item-product">
-                  <img src="img/blue-gemstone-pendant.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/galaxy-earrings-desktop.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="swiper-slide">
               <ul class="shop__products-list">
                 <li class="shop__item-product">
-                  <img src="img/boho-earrings.png" width="270" height="284" alt="">
-                  <p>Necklace with amethyst</p>
-                  <span>$ 145</span>
+                  <a href="#">
+                    <img src="img/double-pearl-earrings.png" width="270" height="284" alt="">
+                    <p>Necklace with amethyst</p>
+                    <span>$ 145</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/gold-layered-necklace.png" width="270" height="284" alt="">
-                  <p>Layered сhoker</p>
-                  <span>$ 115</span>
+                  <a href="#">
+                    <img src="img/bird-necklace.png" width="270" height="284" alt="">
+                    <p>Layered сhoker</p>
+                    <span>$ 115</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/elephant-earrings.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/black-leather-choker-necklace.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/origami-crane-necklace.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/blue-gemstone-pendant.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="shop__products-list">
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/boho-earrings.png" width="270" height="284" alt="">
+                    <p>Necklace with amethyst</p>
+                    <span>$ 145</span>
+                  </a>
+                </li>
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/gold-layered-necklace.png" width="270" height="284" alt="">
+                    <p>Layered сhoker</p>
+                    <span>$ 115</span>
+                  </a>
+                </li>
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/elephant-earrings.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
+                </li>
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/origami-crane-necklace.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="swiper-slide swiper-slide-mobile">
               <ul class="shop__products-list">
                 <li class="shop__item-product">
-                  <img src="img/dainty-gold-necklace-desktop.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/dainty-gold-necklace-desktop.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/galaxy-earrings-desktop.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
-                </li>
-              </ul>
-            </div>
-            <div class="swiper-slide swiper-slide-mobile">
-              <ul class="shop__products-list">
-                <li class="shop__item-product">
-                  <img src="img/black-leather-choker-necklace.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
-                </li>
-                <li class="shop__item-product">
-                  <img src="img/blue-gemstone-pendant.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/galaxy-earrings-desktop.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="swiper-slide swiper-slide-mobile">
               <ul class="shop__products-list">
                 <li class="shop__item-product">
-                  <img src="img/elephant-earrings.png" width="270" height="284" alt="">
-                  <p>Gold chain</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/black-leather-choker-necklace.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
                 <li class="shop__item-product">
-                  <img src="img/origami-crane-necklace.png" width="270" height="284" alt="">
-                  <p>Galaxy earrings</p>
-                  <span>$ 215</span>
+                  <a href="#">
+                    <img src="img/blue-gemstone-pendant.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide swiper-slide-mobile">
+              <ul class="shop__products-list">
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/elephant-earrings.png" width="270" height="284" alt="">
+                    <p>Gold chain</p>
+                    <span>$ 215</span>
+                  </a>
+                </li>
+                <li class="shop__item-product">
+                  <a href="#">
+                    <img src="img/origami-crane-necklace.png" width="270" height="284" alt="">
+                    <p>Galaxy earrings</p>
+                    <span>$ 215</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -203,17 +239,17 @@
         </div>
       </div>
     </section>
-    <!-- <section class="blog">
+    <section class="blog">
       <div class="blog__wrapper">
         <h2>Blog</h2>
-        <a class="blog__link" href="">Read All</a>
+        <a class="blog__link" href="#">Read All</a>
         <ul class="blog__list">
           <li class="blog__item">
             <img src="img/article-1.png" alt="" width="285" height="300">
             <div class="blog__article">
               <span>September 30, 2019</span>
               <p>How to care for your jewellery</p>
-              <a class="" href="">Read Article</a>
+              <a class="" href="#">Read Article</a>
             </div>
           </li>
           <li class="blog__item">
@@ -221,7 +257,7 @@
             <div class="blog__article">
               <span>September 23, 2019</span>
               <p>Power of <br>crystals</p>
-              <a href="">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
           <li class="blog__item">
@@ -229,7 +265,7 @@
             <div class="blog__article">
               <span>September 16, 2019</span>
               <p>AW 19 trends</p>
-              <a href="">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
         </ul>
@@ -252,7 +288,7 @@
             <p>Our jewellerry is made of solid gold, silver or leather. &nbsp;Also, some jewellery contains precious and semiprecious stones and crystals.</p>
           </li>
           <li class="faq__item">
-            <h2>Can I return the jewellery if it didn’t fit me?</h2>
+            <h2>Can I return the <br>jewellery if it didn’t fit me?</h2>
             <p>Our jewellerry is made of solid gold, silver or leather. &nbsp;Also, some jewellery contains precious and semiprecious stones and crystals.</p>
           </li>
         </ul>
@@ -261,7 +297,7 @@
     <section class="social">
       <div class="social__wrapper">
         <h2>@Chjewellery</h2>
-        <a class="social__link" href="">Follow Us</a>
+        <a class="social__link" href="#">Follow Us</a>
         <ul class="social__photos-list">
           <li class="social__photos-item">
             <img src="img/social-1.png" alt="" width="230" height="230">
@@ -295,7 +331,7 @@
           <h2>Log In</h2>
           <label class="visually-hidden" for="email"></label>
           <input type="text" name="email" id="email" placeholder="Your E-mail">
-          <label class="visually-hidden" for="email"></label>
+          <label class="visually-hidden" for="password"></label>
           <input type="text" name="password" id="password" placeholder="Password">
           <a href="">Forgot you password?</a>
           <button type="button">Log In</button>
@@ -320,40 +356,40 @@
       </div>
       <nav class="footer__nav">
         <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="">Ordering & Payment</a></li>
-          <li class="footer__nav-item"><a href="">About CH</a></li>
-          <li class="footer__nav-item"><a href="">Terms & Conditions</a></li>
-          <li class="footer__nav-item"><a href="">Stores & Hours</a></li>
-          <li class="footer__nav-item"><a href="">Returns & Exchanges</a></li>
-          <li class="footer__nav-item"><a href="">Jobs</a></li>
-          <li class="footer__nav-item"><a href="">Delivery</a></li>
-          <li class="footer__nav-item"><a href="">Contact Us</a></li>
+          <li class="footer__nav-item"><a href="#">Ordering & Payment</a></li>
+          <li class="footer__nav-item"><a href="#">About CH</a></li>
+          <li class="footer__nav-item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer__nav-item"><a href="#">Stores & Hours</a></li>
+          <li class="footer__nav-item"><a href="#">Returns & Exchanges</a></li>
+          <li class="footer__nav-item"><a href="#">Jobs</a></li>
+          <li class="footer__nav-item"><a href="#">Delivery</a></li>
+          <li class="footer__nav-item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
       <ul class="footer__contacts-list">
         <li class="footer__contacts-item">
-          <a href="">
+          <a href="#">
             <svg width="8" height="15" viewBox="0 0 8 15">
               <use xlink:href="img/sprite.svg#facebook-svg"></use>
             </svg>Facebook
           </a>
         </li>
         <li class="footer__contacts-item">
-          <a href="">
+          <a href="#">
             <svg width="15" height="15" viewBox="0 0 15 15">
               <use xlink:href="img/sprite.svg#instagram-svg"></use>
             </svg>Instagram
           </a>
         </li>
         <li class="footer__contacts-item">
-          <a href="">
+          <a href="#">
             <svg width="15" height="15" viewBox="0 0 15 15">
               <use xlink:href="img/sprite.svg#pinterest-svg"></use>
             </svg>Pinterest
           </a>
         </li>
         <li class="footer__contacts-item">
-          <a href="">
+          <a href="#">
             <svg width="15" height="13" viewBox="0 0 15 13">
               <use xlink:href="img/sprite.svg#twitter-svg"></use>
             </svg>Twitter
@@ -361,7 +397,7 @@
         </li>
       </ul>
     </div>
-  </footer> -->
+  </footer>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

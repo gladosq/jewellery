@@ -2,6 +2,7 @@
   background: url("../img/promo.png");
   background-color: $link-decoration;
   background-size: cover;
+  background-position: 50% 50%;
   position: relative;
   margin-top: -19px;
 
@@ -46,7 +47,6 @@
   .promo {
     background: url("../img/promo-tablet.png");
     background-size: cover;
-
   }
 
   .promo__wrapper {
@@ -65,10 +65,10 @@
 @media (max-width: $mobile-width) {
   .promo {
     margin-top: -25px;
+    background-position: 50% 50%;
   }
 
   .promo__wrapper {
-
     & h1 {
       font-size: 38px;
       padding-right: 0;

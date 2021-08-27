@@ -47,6 +47,14 @@
     letter-spacing: 0.02em;
     margin-top: -22px;
     margin-right: 52px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   & button {
@@ -58,6 +66,14 @@
     padding: 21px 20px;
     font-family: inherit;
     cursor: pointer;
+
+    &:hover {
+      background: $half-black;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   & p {
@@ -70,15 +86,12 @@
     & a {
       position: absolute;
       display: block;
-      top: 24px;
+      top: 22px;
       right: 54px;
       font-size: 14px;
       color: $basic-black;
     }
   }
-}
-
-.modal__wrapper {
 
   .modal__close-button {
     position: absolute;
@@ -107,6 +120,110 @@
       background: $basic-black;
       transform: rotate(-45deg);
     }
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:hover::before {
+      background: $link-decoration;
+    }
+
+    &:hover::after {
+      background: $link-decoration;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.modal__nojs-logo {
+  position: absolute;
+  top: -54px;
+  left: 196px;
+
+  & svg {
+    fill: $link-decoration;
+  }
+
+  &:hover svg {
+    fill: $basic-black;
+  }
+
+  &:active svg {
+    opacity: 0.6;
+  }
+}
+
+.modal__nojs {
+  .modal__wrapper {
+    margin-top: 20px;
+    animation: none;
+
+    .modal__nojs-back {
+      @include fonts(700, 24px, $basic-black);
+      font-family: "Poppins", "Arial", sans-serif;
+      position: absolute;
+      bottom: -34px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__wrapper {
+    width: 270px;
+    height: 470px;
+    top: 51%;
+
+    & img {
+      width: 270px;
+      height: 84px;
+    }
+
+    .modal__close-button {
+      width: 16px;
+      height: 16px;
+      top: -36px;
+      right: 0;
+
+      &::before {
+        width: 18px;
+        height: 2px;
+      }
+
+      &::after {
+        width: 18px;
+        height: 2px;
+      }
+    }
+
+    & h2 {
+      font-size: 24px;
+      margin-top: 31px;
+    }
+
+    & input {
+      width: 87%;
+      margin-bottom: 22px;
+    }
+
+    & a {
+      margin-right: 14px;
+      margin-top: -18px;
+    }
+
+    & button {
+      margin-top: 36px;
+      width: 88%;
+    }
+
+    & p a {
+      top: 18px;
+      right: 10px;
+      letter-spacing: -0.01em;
+    }
   }
 }
 
@@ -114,12 +231,12 @@
   0% {
     transform: translateY(-100%) translateX(-50%);
   }
-  40%
-  {
+
+  40% {
     transform: translateY(-47%) translateX(-50%);
   }
-  100%
-  {
+
+  100% {
     transform: translateY(-50%) translateX(-50%);
   }
 }

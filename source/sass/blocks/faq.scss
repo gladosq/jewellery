@@ -26,7 +26,19 @@
   height: 44px;
   text-align: left;
   position: relative;
-  transition: all 0.5s;
+  transition: height 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    outline: 2px solid $basic-black;
+    outline-offset: -2px;
+
+    &::before {
+      border-right: 2px solid $basic-black;
+      border-bottom: 2px solid $basic-black;
+      opacity: 1;
+    }
+  }
 
   & h2 {
     @include fonts(500, 17px, $basic-black);
@@ -43,11 +55,14 @@
     max-width: 520px;
     opacity: 0;
     transition: opacity 0.2s;
-
   }
 
   &:last-child {
     border-bottom: 1px solid $basic-black;
+
+    & h2 br {
+      display: none;
+    }
   }
 
   &::before {
@@ -62,7 +77,7 @@
     right: 50px;
     top: 48px;
     opacity: 0.5;
-    transition: all 0.3s;
+    transition: transform 0.3s;
   }
 }
 
@@ -118,6 +133,95 @@
 
     &::before {
       top: 52px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq__item {
+    padding-right: 40px;
+    height: 60px;
+
+    & h2 {
+      padding-right: 80px;
+    }
+  }
+
+  .faq__item--active {
+    height: 170px;
+  }
+}
+
+@media (max-width: $half-mobile-width) {
+  .faq__wrapper {
+    padding-right: 16px;
+    padding-left: 16px;
+
+    & h2 {
+      line-height: 44px;
+      padding-right: 0;
+    }
+  }
+
+  .faq__list {
+    margin-top: 0;
+  }
+
+  .faq__item {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    padding-right: 0;
+    height: 61px;
+
+    & h2 {
+      line-height: 22px;
+      margin-right: 82px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    & p {
+      font-size: 14px;
+      margin-top: 16px;
+      line-height: 20px;
+      margin-right: 56px;
+    }
+
+    &::before {
+      width: 13px;
+      height: 13px;
+      top: 18px;
+      right: 26px;
+    }
+
+    &:nth-child(1) p br {
+      display: none;
+    }
+
+    &:nth-child(2) h2 {
+      margin-right: 120px;
+    }
+
+    &:nth-child(3) h2 {
+      margin-right: 90px;
+    }
+
+    &:nth-child(4) h2 {
+      margin-right: 40px;
+
+      & br {
+        display: block;
+      }
+    }
+  }
+
+  .faq__item--active {
+    height: 176px;
+    padding-top: 12px;
+
+    &::before {
+      top: 26px;
     }
   }
 }

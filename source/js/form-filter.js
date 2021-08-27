@@ -3,8 +3,8 @@ const filterButtons = document.querySelectorAll('.catalog__filter span');
 filterButtons.forEach((item) => {
   item.addEventListener('click', function (evt) {
     evt.target.parentNode.classList.toggle('catalog__filter--active');
-  })
-})
+  });
+});
 
 const filterResetButton = document.querySelector('.catalog__button-clear');
 const catalogFilterItems = document.querySelectorAll('.catalog__filter');
@@ -13,10 +13,10 @@ if (filterResetButton !== null) {
   filterResetButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     resetAllFilters();
-  })
+  });
 }
 
-function resetAllFilters () {
+function resetAllFilters() {
   catalogFilterItems[0].classList = 'catalog__filter catalog__filter--active';
   catalogFilterItems[1].classList = 'catalog__filter';
   catalogFilterItems[2].classList = 'catalog__filter';
@@ -39,10 +39,10 @@ const filterMobileOverlay = document.querySelector('.filter__button-mobile');
 const filterMobileCloseButton = document.querySelector('.filter__button-mobile button');
 
 if (filterMobileButton !== null) {
-  filterMobileButton.addEventListener('click', function (evt) {
+  filterMobileButton.addEventListener('click', function () {
     showFilter();
     overlayCatalog.addEventListener('click', hideFilter);
-  })
+  });
 }
 
 function showFilter() {
