@@ -1290,7 +1290,8 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
     background: url("../img/promo-tablet@2x.png");
-    background-size: cover; } }
+    background-size: cover;
+    background-position: 50% 50%; } }
 
 .shop__wrapper {
   margin: auto;
@@ -1515,8 +1516,7 @@ button.swiper-pagination-bullet {
     background: #f0eae4;
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 300px; }
+    right: 0; }
 
 .blog__item span {
   display: block;
@@ -2099,7 +2099,6 @@ button.swiper-pagination-bullet {
     border: 0;
     margin-right: -49px;
     position: relative;
-    margin-left: auto;
     cursor: pointer; }
     .footer__input-container button:hover {
       color: #a87b62; }
