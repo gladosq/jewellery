@@ -163,7 +163,7 @@
     animation: none;
 
     .modal__nojs-back {
-      @include fonts(700, 24px, $basic-black);
+      @include fonts(500, 18px, $basic-black);
       font-family: "Poppins", "Arial", sans-serif;
       position: absolute;
       bottom: -34px;

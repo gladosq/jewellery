@@ -297,6 +297,10 @@
   .footer__input-container {
     padding-right: 0;
 
+    & input {
+      max-width: 150px;
+    }
+
     &::before {
       width: 97%;
     }
