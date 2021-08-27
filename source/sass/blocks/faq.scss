@@ -28,6 +28,7 @@
   position: relative;
   transition: height 0.5s;
   cursor: pointer;
+  overflow: hidden;
 
   &:hover {
     outline: 2px solid $basic-black;

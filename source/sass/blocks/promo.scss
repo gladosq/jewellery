@@ -43,6 +43,14 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo@2x.png");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .promo {
     background: url("../img/promo-tablet.png");
@@ -58,6 +66,13 @@
 
     & p {
       padding-right: 20px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background: url("../img/promo-tablet@2x.png");
+      background-size: cover;
     }
   }
 }
@@ -78,6 +93,13 @@
     & p {
       padding-right: 0;
       font-size: 34px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background: url("../img/promo-tablet@2x.png");
+      background-size: cover;
     }
   }
 }

@@ -804,6 +804,8 @@ button.swiper-pagination-bullet {
     bottom: -34px; }
 
 @media (max-width: 767px) {
+  .modal__nojs .modal__nojs-logo {
+    margin-left: -86px; }
   .modal__wrapper {
     width: 270px;
     height: 470px;
@@ -1251,6 +1253,12 @@ button.swiper-pagination-bullet {
     z-index: 1;
     margin-top: -2px; }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo@2x.png");
+    background-size: cover;
+    background-position: 50% 50%; } }
+
 @media (max-width: 1023px) {
   .promo {
     background: url("../img/promo-tablet.png");
@@ -1261,6 +1269,11 @@ button.swiper-pagination-bullet {
       padding-right: 20px; }
     .promo__wrapper p {
       padding-right: 20px; } }
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo-tablet@2x.png");
+    background-size: cover; } }
 
 @media (max-width: 767px) {
   .promo {
@@ -1273,6 +1286,11 @@ button.swiper-pagination-bullet {
   .promo__wrapper p {
     padding-right: 0;
     font-size: 34px; } }
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo-tablet@2x.png");
+    background-size: cover; } }
 
 .shop__wrapper {
   margin: auto;
@@ -1472,7 +1490,8 @@ button.swiper-pagination-bullet {
   width: 570px;
   height: 300px; }
   .blog__item:nth-child(1) div {
-    background: #f0eae4; }
+    background: #f0eae4;
+    height: 300px; }
 
 .blog__item:nth-child(2) {
   grid-area: article-2;
@@ -1482,7 +1501,8 @@ button.swiper-pagination-bullet {
   height: 300px; }
   .blog__item:nth-child(2) div {
     order: -1;
-    background: #f0eae4; }
+    background: #f0eae4;
+    height: 300px; }
 
 .blog__item:nth-child(3) {
   position: relative;
@@ -1495,7 +1515,8 @@ button.swiper-pagination-bullet {
     background: #f0eae4;
     position: absolute;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    height: 300px; }
 
 .blog__item span {
   display: block;
@@ -1581,32 +1602,38 @@ button.swiper-pagination-bullet {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .blog__item:nth-child(1) {
-    width: 440px;
-    height: auto; }
-  .blog__item:nth-child(2) {
-    width: 440px;
-    height: auto; }
-  .blog__item:nth-child(3) {
-    width: 440px;
-    height: auto; }
-    .blog__item:nth-child(3) div {
-      min-width: auto;
-      max-width: 220px;
+  .blog__item {
+    margin-bottom: 4px; }
+    .blog__item:nth-child(1) {
+      width: 440px;
+      height: auto; }
+      .blog__item:nth-child(1) div {
+        height: 220px; }
+    .blog__item:nth-child(2) {
+      width: 440px;
+      height: auto; }
+      .blog__item:nth-child(2) div {
+        height: 220px; }
+    .blog__item:nth-child(3) {
+      width: 440px;
+      height: auto; }
+      .blog__item:nth-child(3) div {
+        min-width: auto;
+        max-width: 220px;
+        height: 220px; }
+      .blog__item:nth-child(3) span {
+        margin-top: 34px; }
+    .blog__item img {
+      width: 220px;
       height: 220px; }
-    .blog__item:nth-child(3) span {
-      margin-top: 34px; }
-  .blog__item img {
-    width: 220px;
-    height: 220px; }
-  .blog__item div {
-    width: 220px;
-    height: 220px; }
-    .blog__item div span {
-      margin-top: 24px; }
-    .blog__item div p {
-      padding-left: 10px;
-      padding-right: 10px; } }
+    .blog__item div {
+      width: 220px;
+      height: 220px; }
+      .blog__item div span {
+        margin-top: 24px; }
+      .blog__item div p {
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 @media (max-width: 500px) {
   .blog__wrapper {
@@ -1618,27 +1645,33 @@ button.swiper-pagination-bullet {
     justify-content: space-between;
     margin-top: 54px; }
   .blog__item {
-    margin-bottom: 10px; }
+    margin-bottom: 9px; }
     .blog__item img {
       width: 290px;
       height: 256px; }
     .blog__item:nth-child(1) {
       width: 290px;
       grid-template-columns: 1fr;
-      height: 512px; }
+      height: 513px; }
+      .blog__item:nth-child(1) div {
+        height: 256px;
+        margin-top: -7px; }
     .blog__item:nth-child(2) {
       width: 290px;
       grid-template-columns: 1fr;
-      height: 512px; }
+      height: 513px; }
       .blog__item:nth-child(2) div {
-        order: 1; }
+        order: 1;
+        height: 256px;
+        margin-top: -7px; }
     .blog__item:nth-child(3) {
       width: 290px;
       grid-template-columns: 1fr;
-      height: 512px; }
+      height: 513px; }
       .blog__item:nth-child(3) .blog__article {
         min-width: 290px;
-        height: 256px; }
+        height: 256px;
+        margin-top: -7px; }
         .blog__item:nth-child(3) .blog__article span {
           margin-top: 60px; }
     .blog__item .blog__article {
@@ -1677,7 +1710,8 @@ button.swiper-pagination-bullet {
   text-align: left;
   position: relative;
   transition: height 0.5s;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden; }
   .faq__item:hover {
     outline: 2px solid #000000;
     outline-offset: -2px; }
@@ -2155,7 +2189,7 @@ button.swiper-pagination-bullet {
       padding-left: 4px; }
     .footer__input-container svg {
       top: 224px;
-      right: 3px; }
+      right: 6px; }
   .footer__nav-list {
     margin-left: 4px; }
   .footer__nav-item:nth-child(2) {
@@ -2201,9 +2235,20 @@ button.swiper-pagination-bullet {
     font-style: italic;
     margin-top: 4px; }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .catalog-promo {
+    background: url("../img/catalog-promo@2x.png");
+    background-size: cover; } }
+
 @media (max-width: 1200px) {
   .catalog-promo {
     background: url("../img/catalog-promo-tablet.png");
+    background-position: 50% 50%;
+    background-size: cover; } }
+
+@media (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1200px) and (min-resolution: 2dppx) {
+  .catalog-promo {
+    background: url("../img/catalog-promo-tablet@2x.png");
     background-position: 50% 50%;
     background-size: cover; } }
 

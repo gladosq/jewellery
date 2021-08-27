@@ -25,11 +25,26 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .catalog-promo {
+    background: url("../img/catalog-promo@2x.png");
+    background-size: cover;
+  }
+}
+
 @media (max-width: $half-desktop-width) {
   .catalog-promo {
     background: url("../img/catalog-promo-tablet.png");
     background-position: 50% 50%;
     background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-promo {
+      background: url("../img/catalog-promo-tablet@2x.png");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
   }
 }
 

@@ -172,6 +172,12 @@
 }
 
 @media (max-width: $mobile-width) {
+  .modal__nojs {
+    .modal__nojs-logo {
+      margin-left: -86px;
+    }
+  }
+
   .modal__wrapper {
     width: 270px;
     height: 470px;
