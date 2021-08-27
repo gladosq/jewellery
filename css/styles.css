@@ -796,8 +796,8 @@ button.swiper-pagination-bullet {
   -webkit-animation: none;
           animation: none; }
   .modal__nojs .modal__wrapper .modal__nojs-back {
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     color: #000000;
     font-family: "Poppins", "Arial", sans-serif;
     position: absolute;
@@ -2181,6 +2181,8 @@ button.swiper-pagination-bullet {
     display: flex; }
   .footer__input-container {
     padding-right: 0; }
+    .footer__input-container input {
+      max-width: 150px; }
     .footer__input-container::before {
       width: 97%; }
     .footer__input-container button {
