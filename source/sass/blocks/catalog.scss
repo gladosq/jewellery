@@ -145,7 +145,6 @@
   width: 200px;
   height: 1px;
   background: $link-decoration;
-  margin-top: 5px;
   position: relative;
 
   &::before {
@@ -314,7 +313,7 @@
   }
 }
 
-.filter__button-mobile {
+.filter {
   display: none;
 }
 
@@ -491,7 +490,7 @@
     margin: 30px auto 30px 20px;
   }
 
-  .filter__button-mobile button {
+  .filter button {
     position: fixed;
     width: 32px;
     height: 32px;
@@ -607,7 +606,7 @@
     }
   }
 
-  .filter__button-mobile button {
+  .filter button {
     left: 270px;
     top: 76px;
   }
@@ -701,7 +700,7 @@
     margin-top: 18px;
   }
 
-  .filter__button-mobile button {
+  .filter button {
     left: 272px;
     top: 18px;
   }

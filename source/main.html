@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jewellery</title>
   <link rel="preload" href="fonts/poppins-latin-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-latin-500.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-latin-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-italic-400.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 <body class="page-body">
   <header class="header">
     <div class="header__wrapper">
       <div class="header__top-side-container">
+        <label class="visually-hidden" for="header-search">Поиск по сайту</label>
         <label for="header-search">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <use xlink:href="img/sprite.svg#search-svg"></use>
@@ -23,7 +28,7 @@
             <use xlink:href="img/sprite.svg#hamburger-svg"></use>
           </svg>
         </button>
-        <a class="header__logo-link" style="pointer-events: none;">
+        <a class="header__logo-link header__logo-link--main-page">
           <svg width="66" height="66" viewBox="0 0 66 66" fill="none">
             <use xlink:href="img/sprite.svg#header-logo-svg"></use>
           </svg>
@@ -61,13 +66,13 @@
       </nav>
       <nav class="header__nav-mobile">
         <ul class="header__nav-mobile-list">
-          <li class="header__nav-mobile-item"><a href="">About CH</a></li>
-          <li class="header__nav-mobile-item"><a href="">Stores & Hours</a></li>
-          <li class="header__nav-mobile-item"><a href="">Contact Us</a></li>
+          <li class="header__nav-mobile-item"><a href="#">About CH</a></li>
+          <li class="header__nav-mobile-item"><a href="#">Stores & Hours</a></li>
+          <li class="header__nav-mobile-item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
       <div class="header__login-mobile">
-        <a class="header__login-mobile-link" href="">Login</a>
+        <a class="header__login-mobile-link" href="#">Login</a>
       </div>
     </div>
   </header>
@@ -91,7 +96,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
-                      <img src="img/purple-gemstone-necklace-desktop.png" srcset="img/purple-gemstone-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/purple-gemstone-necklace-desktop.png" srcset="img/purple-gemstone-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Necklace with amethyst</p>
                     <span>$ 145</span>
@@ -102,7 +107,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
-                      <img src="img/layered-choker-necklace-desktop.png" srcset="img/layered-choker-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/layered-choker-necklace-desktop.png" srcset="img/layered-choker-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Layered choker</p>
                     <span>$ 115</span>
@@ -113,7 +118,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
-                      <img src="img/dainty-gold-necklace-desktop.png" srcset="img/dainty-gold-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/dainty-gold-necklace-desktop.png" srcset="img/dainty-gold-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Gold chain</p>
                     <span>$ 215</span>
@@ -124,7 +129,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
-                      <img src="img/galaxy-earrings-desktop.png" srcset="img/galaxy-earrings-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/galaxy-earrings-desktop.png" srcset="img/galaxy-earrings-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Galaxy earrings</p>
                     <span>$ 215</span>
@@ -139,7 +144,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
-                      <img src="img/double-pearl-earrings.png" srcset="img/double-pearl-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/double-pearl-earrings.png" srcset="img/double-pearl-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Double pearl earrings</p>
                     <span>$ 145</span>
@@ -150,7 +155,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
-                      <img src="img/bird-necklace.png" srcset="img/bird-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/bird-necklace.png" srcset="img/bird-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Gold bird necklace</p>
                     <span>$ 115</span>
@@ -161,7 +166,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x">
-                      <img src="img/black-leather-choker-necklace.png" srcset="img/black-leather-choker-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/black-leather-choker-necklace.png" srcset="img/black-leather-choker-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Black leather choker</p>
                     <span>$ 215</span>
@@ -172,7 +177,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
-                      <img src="img/blue-gemstone-pendant.png" srcset="img/blue-gemstone-pendant@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/blue-gemstone-pendant.png" srcset="img/blue-gemstone-pendant@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Blue gemstone pendant</p>
                     <span>$ 215</span>
@@ -187,7 +192,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
-                      <img src="img/boho-earrings.png" srcset="img/boho-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/boho-earrings.png" srcset="img/boho-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Boho earrings</p>
                     <span>$ 145</span>
@@ -198,7 +203,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
-                      <img src="img/gold-layered-necklace.png" srcset="img/gold-layered-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/gold-layered-necklace.png" srcset="img/gold-layered-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Gold layered necklace</p>
                     <span>$ 115</span>
@@ -209,7 +214,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
-                      <img src="img/elephant-earrings.png" srcset="img/elephant-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/elephant-earrings.png" srcset="img/elephant-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Elephant earrings</p>
                     <span>$ 215</span>
@@ -220,7 +225,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
-                      <img src="img/origami-crane-necklace.png" srcset="img/origami-crane-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/origami-crane-necklace.png" srcset="img/origami-crane-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Origami crane necklace</p>
                     <span>$ 215</span>
@@ -235,7 +240,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
-                      <img src="img/dainty-gold-necklace-desktop.png" srcset="img/dainty-gold-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/dainty-gold-necklace-desktop.png" srcset="img/dainty-gold-necklace-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Gold layered necklace</p>
                     <span>$ 215</span>
@@ -246,7 +251,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
-                      <img src="img/galaxy-earrings-desktop.png" srcset="img/galaxy-earrings-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/galaxy-earrings-desktop.png" srcset="img/galaxy-earrings-desktop@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Galaxy earrings</p>
                     <span>$ 215</span>
@@ -261,7 +266,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x">
-                      <img src="img/black-leather-choker-necklace.png" srcset="img/black-leather-choker-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/black-leather-choker-necklace.png" srcset="img/black-leather-choker-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Black leather choker</p>
                     <span>$ 215</span>
@@ -272,7 +277,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
-                      <img src="img/blue-gemstone-pendant.png" srcset="img/blue-gemstone-pendant@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/blue-gemstone-pendant.png" srcset="img/blue-gemstone-pendant@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Blue gemstone pendant</p>
                     <span>$ 215</span>
@@ -287,7 +292,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
-                      <img src="img/elephant-earrings.png" srcset="img/elephant-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/elephant-earrings.png" srcset="img/elephant-earrings@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Elephant earrings</p>
                     <span>$ 215</span>
@@ -298,7 +303,7 @@
                     <picture>
                       <!-- Non-retina size: 270px/284px; Retina-size: 540px/568px -->
                       <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
-                      <img src="img/origami-crane-necklace.png" srcset="img/origami-crane-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellry">
+                      <img src="img/origami-crane-necklace.png" srcset="img/origami-crane-necklace@2x.png 2x" width="270" height="284" alt="Image of jewellery">
                     </picture>
                     <p>Origami crane necklace</p>
                     <span>$ 215</span>
@@ -322,19 +327,19 @@
             <picture>
               <!-- Non-retina size: 285px/300px; Retina-size: 570px/600px -->
               <source type="image/webp" srcset="img/article-1.webp 1x, img/article-1@2x.webp 2x">
-              <img src="img/article-1.png" srcset="img/article-1@2x.png 2x" alt="Image of jewellry" width="285" height="300">
+              <img src="img/article-1.png" srcset="img/article-1@2x.png 2x" alt="Image of jewellery" width="285" height="300">
             </picture>
             <div class="blog__article">
               <span>September 30, 2019</span>
               <p>How to care for your jewellery</p>
-              <a class="" href="#">Read Article</a>
+              <a href="#">Read Article</a>
             </div>
           </li>
           <li class="blog__item">
             <picture>
               <!-- Non-retina size: 285px/300px; Retina-size: 570px/600px -->
               <source type="image/webp" srcset="img/article-2.webp 1x, img/article-2@2x.webp 2x">
-              <img src="img/article-2.png" srcset="img/article-2@2x.png 2x" alt="Image of jewellry" width="285" height="300">
+              <img src="img/article-2.png" srcset="img/article-2@2x.png 2x" alt="Image of jewellery" width="285" height="300">
             </picture>
             <div class="blog__article">
               <span>September 23, 2019</span>
@@ -346,7 +351,7 @@
             <picture>
               <!-- Non-retina size: 570px/630px; Retina-size: 1140px/1260px -->
               <source type="image/webp" srcset="img/article-3.webp 1x, img/article-3@2x.webp 2x">
-              <img src="img/article-3.png" srcset="img/article-3@2x.png 2x" alt="Image of jewellry" width="570" height="630">
+              <img src="img/article-3.png" srcset="img/article-3@2x.png 2x" alt="Image of jewellery" width="570" height="630">
             </picture>
             <div class="blog__article">
               <span>September 16, 2019</span>
@@ -380,58 +385,58 @@
         </ul>
       </div>
     </section>
-    <section class="social">
-      <div class="social__wrapper">
+    <section class="gallery">
+      <div class="gallery__wrapper">
         <h2>@Chjewellery</h2>
-        <a class="social__link" href="#">Follow Us</a>
-        <ul class="social__photos-list">
-          <li class="social__photos-item">
+        <a class="gallery__link" href="#">Follow Us</a>
+        <ul class="gallery__photos-list">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/230px; Retina-size: 460px/460px -->
-              <source type="image/webp" srcset="img/social-1.webp 1x, img/social-1@2x.webp 2x">
-              <img src="img/social-1.png" srcset="img/social-1@2x.png 2x" alt="Image of jewellry" width="230" height="230">
+              <source type="image/webp" srcset="img/gallery-1.webp 1x, img/gallery-1@2x.webp 2x">
+              <img src="img/gallery-1.png" srcset="img/gallery-1@2x.png 2x" alt="Image of jewellery" width="230" height="230">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/150px; Retina-size: 460px/300px -->
-              <source type="image/webp" srcset="img/social-2.webp 1x, img/social-2@2x.webp 2x">
-              <img src="img/social-2.png" srcset="img/social-2@2x.png 2x" alt="Image of jewellry" width="230" height="150">
+              <source type="image/webp" srcset="img/gallery-2.webp 1x, img/gallery-2@2x.webp 2x">
+              <img src="img/gallery-2.png" srcset="img/gallery-2@2x.png 2x" alt="Image of jewellery" width="230" height="150">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 399px/412px; Retina-size: 798px/824px -->
-              <source type="image/webp" srcset="img/social-3.webp 1x, img/social-3@2x.webp 2x">
-              <img src="img/social-3.png" srcset="img/social-3@2x.png 2x" alt="Image of jewellry" width="399" height="412">
+              <source type="image/webp" srcset="img/gallery-3.webp 1x, img/gallery-3@2x.webp 2x">
+              <img src="img/gallery-3.png" srcset="img/gallery-3@2x.png 2x" alt="Image of jewellery" width="399" height="412">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/230px; Retina-size: 460px/460px -->
-              <source type="image/webp" srcset="img/social-4.webp 1x, img/social-4@2x.webp 2x">
-              <img src="img/social-4.png" srcset="img/social-4@2x.png 2x" alt="Image of jewellry" width="230" height="230">
+              <source type="image/webp" srcset="img/gallery-4.webp 1x, img/gallery-4@2x.webp 2x">
+              <img src="img/gallery-4.png" srcset="img/gallery-4@2x.png 2x" alt="Image of jewellery" width="230" height="230">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/150px; Retina-size: 460px/300px -->
-              <source type="image/webp" srcset="img/social-5.webp 1x, img/social-5@2x.webp 2x">
-              <img src="img/social-5.png" srcset="img/social-5@2x.png 2x" alt="Image of jewellry" width="230" height="150">
+              <source type="image/webp" srcset="img/gallery-5.webp 1x, img/gallery-5@2x.webp 2x">
+              <img src="img/gallery-5.png" srcset="img/gallery-5@2x.png 2x" alt="Image of jewellery" width="230" height="150">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/230px; Retina-size: 460px/460px -->
-              <source type="image/webp" srcset="img/social-6.webp 1x, img/social-6@2x.webp 2x">
-              <img src="img/social-6.png" srcset="img/social-6@2x.png 2x" alt="Image of jewellry" width="230" height="230">
+              <source type="image/webp" srcset="img/gallery-6.webp 1x, img/gallery-6@2x.webp 2x">
+              <img src="img/gallery-6.png" srcset="img/gallery-6@2x.png 2x" alt="Image of jewellery" width="230" height="230">
             </picture>
           </li>
-          <li class="social__photos-item">
+          <li class="gallery__photos-item">
             <picture>
               <!-- Non-retina size: 230px/150px; Retina-size: 460px/300px -->
-              <source type="image/webp" srcset="img/social-7.webp 1x, img/social-7@2x.webp 2x">
-              <img src="img/social-7.png" srcset="img/social-7@2x.png 2x" alt="Image of jewellry" width="230" height="150">
+              <source type="image/webp" srcset="img/gallery-7.webp 1x, img/gallery-7@2x.webp 2x">
+              <img src="img/gallery-7.png" srcset="img/gallery-7@2x.png 2x" alt="Image of jewellery" width="230" height="150">
             </picture>
           </li>
         </ul>
@@ -439,21 +444,21 @@
     </section>
     <section class="modal hidden">
       <div class="modal__wrapper">
-        <button class="modal__close-button"></button>
+        <button type="button" class="modal__close-button"></button>
         <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
           <picture>
             <!-- Non-retina size: 442px/138px; Retina-size: 860px/276px -->
             <source type="image/webp" srcset="img/modal.webp 1x, img/modal@2x.webp 2x">
-            <img src="img/modal.png" srcset="img/modal@2x.png 2x" alt="Image of jewellry" width="442" height="138">
+            <img src="img/modal.png" srcset="img/modal@2x.png 2x" alt="Image of jewellery" width="442" height="138">
           </picture>
           <h2>Log In</h2>
           <label class="visually-hidden" for="email"></label>
           <input type="text" name="email" id="email" placeholder="Your E-mail">
           <label class="visually-hidden" for="password"></label>
           <input type="text" name="password" id="password" placeholder="Password">
-          <a href="">Forgot you password?</a>
+          <a href="#">Forgot you password?</a>
           <button type="button">Log In</button>
-          <p class="">Don’t have an account?<a href="">Sign up</a></p>
+          <p>Don’t have an account?<a href="#">Sign up</a></p>
         </form>
       </div>
     </section>
@@ -465,7 +470,8 @@
         <h3>The good stuff in your inbox </h3>
         <p>News and updates from CH. No spam, we promise.</p>
         <div class="footer__input-container">
-          <input type="text" placeholder="Your E-mail">
+          <label class="visually-hidden" for="footer-input">Введите e-mail</label>
+          <input type="text" placeholder="Your E-mail" name="footer-input" id="footer-input">
           <button type="button">Sign Up</button>
           <svg width="34" height="14" viewBox="0 0 34 14">
             <use xlink:href="img/sprite.svg#arrow-footer-svg"></use>

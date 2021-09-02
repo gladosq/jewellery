@@ -218,6 +218,10 @@
   }
 }
 
+.header__logo-link--main-page {
+  pointer-events: none;
+}
+
 @media (max-width: $tablet-width) {
   .header {
     margin-bottom: 6px;
