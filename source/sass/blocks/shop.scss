@@ -6,7 +6,7 @@
 
   & h2 {
     @include fonts(700, 34px, $basic-black);
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     line-height: 34px;
     margin-bottom: 18px;
   }

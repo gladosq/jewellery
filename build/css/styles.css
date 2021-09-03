@@ -679,7 +679,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #000000;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     margin-top: 44px; }
   .modal__wrapper input {
     font-family: inherit;
@@ -1239,7 +1239,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 45px;
     color: #ffffff;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -1251,7 +1251,7 @@ button.swiper-pagination-bullet {
     font-weight: 400;
     font-size: 38px;
     color: #ffffff;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     font-style: italic;
     text-align: center;
     position: relative;
@@ -1307,7 +1307,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #000000;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     line-height: 34px;
     margin-bottom: 18px; }
 
@@ -1492,7 +1492,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #000000;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     margin-top: 104px;
     margin-bottom: 18px; }
 
@@ -1556,7 +1556,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-size: 26px;
   color: #000000;
-  font-family: "Cormorant Garamond", "Arial", sans-serif;
+  font-family: "Cormorant Garamond", "Georgia", serif;
   line-height: 34px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1711,7 +1711,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #000000;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     letter-spacing: 0.03em;
     margin-top: 122px; }
 
@@ -1870,7 +1870,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #000000;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     margin-top: 112px;
     letter-spacing: 0.03em; }
 
@@ -2038,7 +2038,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: inherit;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     letter-spacing: 0.02em;
     margin-bottom: 0; }
   .footer__inbox p {
@@ -2262,8 +2262,8 @@ button.swiper-pagination-bullet {
       height: 22px; } }
 
 .catalog-promo {
-  background: #a87b62;
   background: url("../img/catalog-promo.png");
+  background-color: #a87b62;
   background-size: cover;
   margin-top: -10px; }
 
@@ -2274,7 +2274,7 @@ button.swiper-pagination-bullet {
     font-weight: 700;
     font-size: 34px;
     color: #ffffff;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     text-transform: uppercase;
     padding-top: 94px;
     margin-bottom: 0; }
@@ -2282,7 +2282,7 @@ button.swiper-pagination-bullet {
     font-weight: 400;
     font-size: 22px;
     color: #ffffff;
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     font-style: italic;
     margin-top: 4px; }
 

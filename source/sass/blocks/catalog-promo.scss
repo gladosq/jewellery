@@ -11,7 +11,7 @@
 
   & h1 {
     @include fonts(700, 34px, $basic-white);
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     text-transform: uppercase;
     padding-top: 94px;
     margin-bottom: 0;
@@ -19,7 +19,7 @@
 
   & p {
     @include fonts(400, 22px, $basic-white);
-    font-family: "Cormorant Garamond", "Arial", sans-serif;
+    font-family: "Cormorant Garamond", "Georgia", serif;
     font-style: italic;
     margin-top: 4px;
   }
