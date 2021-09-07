@@ -18,7 +18,6 @@
     });
   });
   var filterResetButton = document.querySelector('.catalog__button-clear');
-  var catalogFilterItems = document.querySelectorAll('.catalog__filter');
 
   if (filterResetButton !== null) {
     filterResetButton.addEventListener('click', function (evt) {
@@ -28,17 +27,13 @@
   }
 
   function resetAllFilters() {
-    catalogFilterItems[0].classList = 'catalog__filter catalog__filter--active';
-    catalogFilterItems[1].classList = 'catalog__filter';
-    catalogFilterItems[2].classList = 'catalog__filter';
-    catalogFilterItems[3].classList = 'catalog__filter catalog__filter--active';
-    document.getElementById('necklaces').checked = true;
-    document.getElementById('chokers').checked = true;
+    document.getElementById('necklaces').checked = false;
+    document.getElementById('chokers').checked = false;
     document.getElementById('rings').checked = false;
-    document.getElementById('earrings').checked = true;
-    document.getElementById('gold').checked = true;
+    document.getElementById('earrings').checked = false;
+    document.getElementById('gold').checked = false;
     document.getElementById('silver').checked = false;
-    document.getElementById('pink').checked = true;
+    document.getElementById('pink').checked = false;
     document.getElementById('dreams').checked = false;
   }
 
@@ -83,6 +78,7 @@
   var openMobileModalButton = document.querySelector('.header__login-mobile-link');
   var inputMail = document.getElementById('email');
   var modalSendData = document.querySelector('.modal__wrapper form button');
+  var modalEmailInput = document.querySelector('.modal__email-input');
   modalSendData.addEventListener('click', function () {
     localStorage.setItem('phone', inputMail.value);
   });
@@ -110,6 +106,7 @@
 
   function showModal() {
     modal.classList.remove('hidden');
+    modalEmailInput.focus();
     overlay.classList.remove('hidden');
     document.body.classList.add('no-scroll');
   }
