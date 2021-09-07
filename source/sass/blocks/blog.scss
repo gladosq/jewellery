@@ -44,6 +44,13 @@
     & div {
       background: $background-color;
       height: 300px;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    & div::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -58,6 +65,13 @@
       order: -1;
       background: $background-color;
       height: 300px;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    & div::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -74,6 +88,13 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    & div::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -97,6 +118,7 @@
   & a {
     position: relative;
     margin-top: 35px;
+    padding-bottom: 30px;
     display: block;
 
     &::before {
@@ -104,7 +126,7 @@
       position: absolute;
       width: 96px;
       height: 1px;
-      bottom: -2px;
+      top: 24px;
       background: $link-decoration;
     }
   }

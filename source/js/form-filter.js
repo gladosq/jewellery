@@ -8,7 +8,6 @@
   });
 
   const filterResetButton = document.querySelector('.catalog__button-clear');
-  const catalogFilterItems = document.querySelectorAll('.catalog__filter');
 
   if (filterResetButton !== null) {
     filterResetButton.addEventListener('click', function (evt) {
@@ -18,18 +17,13 @@
   }
 
   function resetAllFilters() {
-    catalogFilterItems[0].classList = 'catalog__filter catalog__filter--active';
-    catalogFilterItems[1].classList = 'catalog__filter';
-    catalogFilterItems[2].classList = 'catalog__filter';
-    catalogFilterItems[3].classList = 'catalog__filter catalog__filter--active';
-
-    document.getElementById('necklaces').checked = true;
-    document.getElementById('chokers').checked = true;
+    document.getElementById('necklaces').checked = false;
+    document.getElementById('chokers').checked = false;
     document.getElementById('rings').checked = false;
-    document.getElementById('earrings').checked = true;
-    document.getElementById('gold').checked = true;
+    document.getElementById('earrings').checked = false;
+    document.getElementById('gold').checked = false;
     document.getElementById('silver').checked = false;
-    document.getElementById('pink').checked = true;
+    document.getElementById('pink').checked = false;
     document.getElementById('dreams').checked = false;
   }
 

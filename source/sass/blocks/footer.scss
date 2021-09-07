@@ -111,7 +111,10 @@
 .footer__input-container {
   display: flex;
   justify-content: space-between;
-  padding-right: 100px;
+
+  & form {
+    width: 560px;
+  }
 
   & input {
     @include fonts(500, 14px, $basic-white);
@@ -140,7 +143,7 @@
     width: 90.5%;
     height: 1px;
     background: $basic-white;
-    bottom: 24px;
+    top: 180px;
   }
 
   & button {
@@ -153,7 +156,8 @@
     color: $basic-white;
     margin-top: 21px;
     border: 0;
-    margin-right: -49px;
+    // margin-right: -69px;
+    margin-left: 220px;
     position: relative;
     cursor: pointer;
 
@@ -176,7 +180,7 @@
 
   & svg {
     position: absolute;
-    bottom: 37px;
+    top: 153px;
     right: 51px;
     stroke: $basic-white;
     transform: rotate(180deg);
@@ -214,7 +218,7 @@
     }
 
     & button {
-      margin-right: 28px;
+      margin-left: 264px;
       margin-top: 24px;
     }
 
@@ -258,6 +262,19 @@
   .footer__nav-list {
     max-width: 300px;
     margin-right: 0;
+  }
+
+  .footer__input-container {
+    & form {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    & button {
+      margin-left: 0;
+      margin-right: 130px;
+    }
   }
 }
 
@@ -303,6 +320,7 @@
 
     &::before {
       width: 97%;
+      top: 250px;
     }
 
     & button {

@@ -151,6 +151,57 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .gallery__wrapper {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .gallery__photos-item {
+    &:nth-child(1) {
+      & img {
+        height: 133px;
+      }
+    }
+
+    &:nth-child(2) {
+      & img {
+        height: 87px;
+      }
+    }
+
+    &:nth-child(3) {
+      & img {
+        height: 240px;
+      }
+    }
+
+    &:nth-child(4) {
+      & img {
+        height: 133px;
+      }
+    }
+
+    &:nth-child(5) {
+      & img {
+        height: 87px;
+      }
+    }
+
+    &:nth-child(6) {
+      & img {
+        height: 133px;
+      }
+    }
+
+    &:nth-child(7) {
+      & img {
+        height: 87px;
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile-width) {
   .gallery__wrapper {
     padding-left: 14px;
@@ -167,7 +218,7 @@
 
   .gallery__photos-item {
     &:nth-child(6) {
-      margin-left: -100px;
+      margin-left: -95px;
       max-width: 100%;
 
       & img {
@@ -177,7 +228,7 @@
     }
 
     &:nth-child(7) {
-      margin-left: -100px;
+      margin-left: -95px;
       max-width: 100%;
 
       & img {

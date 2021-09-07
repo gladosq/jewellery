@@ -4,11 +4,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 442px;
-  height: 584px;
+  max-height: 90vh;
   background: $background-color;
   z-index: 20;
   animation: slide-up-down 0.5s 1 cubic-bezier(0.17, 0.84, 0.44, 1);
   text-align: center;
+  overflow: scroll;
+  padding-bottom: 40px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   & h2 {
     @include fonts(700, 34px, $basic-black);
@@ -46,7 +54,9 @@
     font-size: 12px;
     letter-spacing: 0.02em;
     margin-top: -22px;
-    margin-right: 52px;
+    margin-left: 240px;
+    width: 150px;
+    color: $half-black;
 
     &:hover {
       text-decoration: underline;
@@ -86,8 +96,8 @@
     & a {
       position: absolute;
       display: block;
-      top: 22px;
-      right: 54px;
+      width: 60px;
+      right: 106px;
       font-size: 14px;
       color: $basic-black;
     }
@@ -161,20 +171,44 @@
   .modal__wrapper {
     margin-top: 20px;
     animation: none;
+    max-height: none;
+    height: 600px;
+    overflow: auto;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+
+    .modal__nojs-logo {
+      margin-left: -84px;
+    }
 
     .modal__nojs-back {
       @include fonts(500, 18px, $basic-black);
       font-family: "Poppins", "Arial", sans-serif;
-      position: absolute;
-      bottom: -34px;
+      position: relative;
+      margin-left: 40px;
+      width: 214px;
+      margin-top: 40px;
+    }
+
+    .modal__close-button {
+      display: none;
     }
   }
 }
 
 @media (max-width: $mobile-width) {
   .modal__nojs {
-    .modal__nojs-logo {
-      margin-left: -86px;
+    .modal__wrapper {
+      .modal__nojs-logo {
+        margin-left: -170px;
+      }
+
+      .modal__nojs-back {
+        margin-left: -60px;
+      }
     }
   }
 
@@ -217,6 +251,7 @@
 
     & a {
       margin-right: 14px;
+      margin-left: 102px;
       margin-top: -18px;
     }
 

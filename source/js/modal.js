@@ -6,6 +6,7 @@
   const openMobileModalButton = document.querySelector('.header__login-mobile-link');
   const inputMail = document.getElementById('email');
   const modalSendData = document.querySelector('.modal__wrapper form button');
+  const modalEmailInput = document.querySelector('.modal__email-input');
 
   modalSendData.addEventListener('click', function () {
     localStorage.setItem('phone', inputMail.value);
@@ -34,6 +35,7 @@
 
   function showModal() {
     modal.classList.remove('hidden');
+    modalEmailInput.focus();
     overlay.classList.remove('hidden');
     document.body.classList.add('no-scroll');
   }

@@ -85,18 +85,14 @@
 }
 
 @media (max-width: $half-desktop-width) {
-  .shop__item-product:nth-child(n+3) {
-    display: none;
-  }
-
   .shop__products-list {
-    width: 686px;
+    width: 1000px;
   }
 
   .shop__item-product {
     & img {
-      width: 324px;
-      height: 340px;
+      width: 240px;
+      height: auto;
     }
   }
 }
@@ -111,6 +107,21 @@
   .shop__link {
     &::before {
       bottom: -4px;
+    }
+  }
+
+  .shop__products-list {
+    width: 686px;
+  }
+
+  .shop__item-product {
+    & img {
+      width: 324px;
+      height: 340px;
+    }
+
+    &:nth-child(n+3) {
+      display: none;
     }
   }
 }

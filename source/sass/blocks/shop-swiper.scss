@@ -30,6 +30,12 @@
 
 @media (max-width: $half-desktop-width) {
   .swiper-container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .swiper-container {
     width: 676px;
     height: 496px;
     padding-top: 86px;
