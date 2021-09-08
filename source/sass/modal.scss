@@ -6,7 +6,7 @@
   width: 442px;
   max-height: 90vh;
   background: $background-color;
-  z-index: 20;
+  z-index: 40;
   animation: slide-up-down 0.5s 1 cubic-bezier(0.17, 0.84, 0.44, 1);
   text-align: center;
   overflow: scroll;
@@ -202,12 +202,14 @@
 @media (max-width: $mobile-width) {
   .modal__nojs {
     .modal__wrapper {
+      height: 470px;
+
       .modal__nojs-logo {
         margin-left: -170px;
       }
 
       .modal__nojs-back {
-        margin-left: -60px;
+        margin-left: 0;
       }
     }
   }
