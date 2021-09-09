@@ -177,15 +177,17 @@
   .blog__item {
     margin-bottom: 20px;
     min-width: 100%;
+    height: auto;
 
     & img {
       width: 100%;
       height: 300px;
-      object-fit: cover;
+      max-height: 300px;
     }
 
     & div {
       width: 100%;
+      height: 98%;
 
       & p {
         padding-left: 70px;
@@ -196,10 +198,18 @@
     &:nth-child(1) {
       & img {
         width: 100%;
+        object-fit: cover;
       }
 
       & div {
         width: 100%;
+        height: 98%;
+      }
+    }
+
+    &:nth-child(2) {
+      & div {
+        height: 98%;
       }
     }
 
@@ -211,6 +221,7 @@
       & div {
         position: relative;
         min-width: 100%;
+        height: 98%;
       }
 
       & img {
@@ -296,6 +307,10 @@
         height: 256px;
         margin-top: -7px;
       }
+
+      & img {
+        height: 256px;
+      }
     }
 
     &:nth-child(2) {
@@ -308,6 +323,10 @@
         height: 256px;
         margin-top: -7px;
         width: 100%;
+      }
+
+      & img {
+        height: 256px;
       }
     }
 
@@ -324,6 +343,10 @@
         & span {
           margin-top: 60px;
         }
+      }
+
+      & img {
+        height: 256px;
       }
     }
 

@@ -199,6 +199,12 @@
   }
 }
 
+.modal__decoration-tab {
+  // &:focus {
+  //   outline: none;
+  // }
+}
+
 @media (max-width: $mobile-width) {
   .modal__nojs {
     .modal__wrapper {
