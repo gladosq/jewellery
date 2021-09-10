@@ -199,10 +199,22 @@
   }
 }
 
-.modal__decoration-tab {
-  // &:focus {
-  //   outline: none;
-  // }
+.modal__tab-top {
+  &:focus {
+    outline: none;
+    border: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.modal__tab-bottom {
+  &:focus {
+    outline: none;
+    border: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {

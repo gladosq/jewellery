@@ -23,7 +23,7 @@
           </label>
           <input type="text" placeholder="Type here to search" name="header-search" id="header-search" required>
         </form>
-        <button class="header__mobile-hamburger" type="button">
+        <button class="header__mobile-hamburger" type="button" aria-label="Кнопка меню сайта">
           <svg width="25" height="18" viewBox="0 0 25 18" fill="none">
             <use xlink:href="img/sprite.svg#hamburger-svg"></use>
           </svg>
@@ -294,6 +294,7 @@
     </section>
     <section class="modal hidden">
       <div class="modal__wrapper">
+        <input class="modal__tab-top visually-hidden" tabindex="9"></input>
         <button type="button" class="modal__close-button"></button>
         <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
           <picture>
@@ -310,6 +311,7 @@
           <button type="submit">Log In</button>
           <p>Don’t have an account?<a href="#">Sign up</a></p>
         </form>
+        <input class="modal__tab-bottom visually-hidden" tabindex="14"></input>
       </div>
     </section>
     <div class="overlay hidden"></div>

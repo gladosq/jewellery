@@ -8,6 +8,19 @@
   const modalSendData = document.querySelector('.modal__wrapper form button');
   const modalEmailInput = document.querySelector('.modal__email-input');
 
+  const modalTitle = document.querySelector('.modal__wrapper h2');
+
+  modalTitle.addEventListener('click', function () {
+    console.log('work');
+    document.querySelector('.modal__tab-top').focus();
+  })
+
+  const modalTabBottom = document.querySelector('.modal__tab-bottom');
+
+  modalTabBottom.addEventListener('focus', function () {
+    modalCloseButton.focus();
+  })
+
   modalSendData.addEventListener('click', function () {
     localStorage.setItem('phone', inputMail.value);
   });
