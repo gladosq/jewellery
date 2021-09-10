@@ -295,7 +295,7 @@
     <section class="modal hidden">
       <div class="modal__wrapper">
         <input class="modal__tab-top visually-hidden" tabindex="9"></input>
-        <button type="button" class="modal__close-button"></button>
+        <button type="button" class="modal__close-button" tabindex="10"></button>
         <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
           <picture>
             <!-- Non-retina size: 442px/138px; Retina-size: 860px/276px -->
@@ -304,14 +304,14 @@
           </picture>
           <h2>Log In</h2>
           <label class="visually-hidden" for="email"></label>
-          <input class="modal__email-input" type="email" name="email" id="email" placeholder="Your E-mail">
+          <input class="modal__email-input" type="email" name="email" id="email" placeholder="Your E-mail" tabindex="11" required>
           <label class="visually-hidden" for="password"></label>
-          <input type="password" name="password" id="password" placeholder="Password">
+          <input type="password" name="password" id="password" placeholder="Password" tabindex="12" required>
           <a href="#">Forgot you password?</a>
-          <button type="submit">Log In</button>
-          <p>Don’t have an account?<a href="#">Sign up</a></p>
+          <button type="submit" tabindex="13">Log In</button>
+          <p>Don’t have an account?<a href="#" tabindex="14">Sign up</a></p>
         </form>
-        <input class="modal__tab-bottom visually-hidden" tabindex="14"></input>
+        <input class="modal__tab-bottom visually-hidden" tabindex="15"></input>
       </div>
     </section>
     <div class="overlay hidden"></div>
