@@ -79,6 +79,15 @@
   var inputMail = document.getElementById('email');
   var modalSendData = document.querySelector('.modal__wrapper form button');
   var modalEmailInput = document.querySelector('.modal__email-input');
+  var modalTitle = document.querySelector('.modal__wrapper h2');
+  modalTitle.addEventListener('click', function () {
+    console.log('work');
+    document.querySelector('.modal__tab-top').focus();
+  });
+  var modalTabBottom = document.querySelector('.modal__tab-bottom');
+  modalTabBottom.addEventListener('focus', function () {
+    modalCloseButton.focus();
+  });
   modalSendData.addEventListener('click', function () {
     localStorage.setItem('phone', inputMail.value);
   });
